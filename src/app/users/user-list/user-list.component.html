@@ -1,0 +1,7 @@
+<h2>Lista de Usuarios</h2>
+
+<ul class="list-group">
+   <li class="list-group-item" *ngFor="let user of users">
+     {{ user.name }}   <button class="btn btn-success" (click)="showUserDetails(user.id)">Ver detalles</button>
+   </li>
+ </ul>
